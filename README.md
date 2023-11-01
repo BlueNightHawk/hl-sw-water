@@ -1,14 +1,12 @@
-About
-======================
 Software Mode Water
+======================
 Ported from Xash3D FWGS
 (Using Engine Hooks)
-======================
-
 Credits : Xash3D FWGS Team
 		  [Original pull request](https://github.com/FWGS/xash3d-fwgs/pull/1475)
 		  by [a1batross](https://github.com/a1batross)
 
+About
 ======================
 
 [Half-Life Updated](https://github.com/SamVanheer/halflife-updated), [Opposing Force Updated](https://github.com/SamVanheer/halflife-op4-updated) and [Blue Shift Updated](https://github.com/SamVanheer/halflife-bs-updated) are repositories that provide updated versions of the Half-Life SDK, targeted to the 3 Half-Life 1 PC games officially available.
