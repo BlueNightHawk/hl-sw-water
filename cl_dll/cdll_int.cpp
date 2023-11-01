@@ -36,6 +36,8 @@
 #include "vgui_TeamFortressViewport.h"
 #include "filesystem_utils.h"
 
+#include "gl_ripples.h"
+
 cl_enginefunc_t gEngfuncs;
 CHud gHUD;
 TeamFortressViewport* gViewPort = NULL;
@@ -50,6 +52,8 @@ void CL_UnloadParticleMan();
 void InitInput();
 void EV_HookEvents();
 void IN_Commands();
+
+void InitHooks();
 
 /*
 ================================
@@ -127,6 +131,8 @@ int DLLEXPORT Initialize(cl_enginefunc_t* pEnginefuncs, int iVersion)
 		return 0;
 	}
 
+	InitHooks();
+
 	// get tracker interface, if any
 	return 1;
 }
@@ -148,6 +154,8 @@ int DLLEXPORT HUD_VidInit()
 	gHUD.VidInit();
 
 	VGui_Startup();
+
+	R_ResetRipples();
 
 	return 1;
 }

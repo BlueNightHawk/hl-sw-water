@@ -1619,7 +1619,7 @@ void V_CalcSpectatorRefdef(struct ref_params_s* pparams)
 		VectorCopy(v_origin, pparams->vieworg);
 }
 
-
+ref_params_s g_params;
 
 void DLLEXPORT V_CalcRefdef(struct ref_params_s* pparams)
 {
@@ -1639,6 +1639,8 @@ void DLLEXPORT V_CalcRefdef(struct ref_params_s* pparams)
 		V_CalcNormalRefdef(pparams);
 	}
 
+
+	g_params = *pparams;
 	/*
 // Example of how to overlay the whole screen with red at 50 % alpha
 #define SF_TEST

@@ -64,6 +64,12 @@
     <Filter Include="Source Files\cl_dll\particleman">
       <UniqueIdentifier>{7085339d-2b33-4cdf-846c-0e4c7d33add8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ripples">
+      <UniqueIdentifier>{5f66922a-036e-48e5-93a7-2196d05e2408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ripples">
+      <UniqueIdentifier>{cc9c9dfc-9e3e-498c-8be2-93338afdebf4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\dlls\crossbow.cpp">
@@ -320,6 +326,15 @@
     </ClCompile>
     <ClCompile Include="..\..\cl_dll\particleman\CBaseParticle.cpp">
       <Filter>Source Files\cl_dll\particleman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cl_dll\gl_ripples.cpp">
+      <Filter>Source Files\ripples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cl_dll\gl_hook.cpp">
+      <Filter>Source Files\ripples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\SPTLib\MemUtils_win.cpp">
+      <Filter>Source Files\ripples</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -595,6 +610,15 @@
     </ClInclude>
     <ClInclude Include="..\..\cl_dll\particleman\CBaseParticle.h">
       <Filter>Header Files\cl_dll\particleman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cl_dll\gl_ripples.h">
+      <Filter>Header Files\ripples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cl_dll\gl_hooks.h">
+      <Filter>Header Files\ripples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cl_dll\gl_patterns.h">
+      <Filter>Header Files\ripples</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
